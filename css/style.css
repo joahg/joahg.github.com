@@ -8,13 +8,19 @@ div{margin:0;padding:0;background-color:transparent;}
 hr,img{border:0}
 applet,iframe,object{border:0;margin:0;padding:0}
 button,input[type=button],input[type=image],input[type=reset],input[type=submit],label{cursor:pointer;}
-ul,li{list-style:none;margin:0;padding:0;}
+ul,li{margin:0;padding:0;}
 strong{font-weight:bold;}
 em{font-style:italic;}
 
 /* END CSS RESET */
+
 body {
-	text-align: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	font-size: 62.5%;
+	font-family: "Monaco", "Trebuchet MS";
+	z-index: -1;
 }
 
 a {
@@ -22,10 +28,52 @@ a {
 	color: black;
 }
 
+*::selection {
+	background-color: #cf3c28;
+	color: white;
+}
+
 a:hover {
-	color: #999;
+	color: #cf3c28;
+}
+
+#bgimg {
+	opacity: 0.5;
+	position: absolute;
+	z-index: 1;
+	bottom: 10;
+	right: 10;
 }
 
 #name {
-	font-size: 50px;
+	position: relative;
+	font-size: 4rem;
+	top: 5%;
+	left: 10px;
+}
+
+#fm {
+	position: relative;
+	top: 4%;
+	text-align: left;
+	left: 50px;
+	font-size: 1.5rem;
+}
+
+#l li {
+	list-style-type: none;
+	position:relative;
+}
+#l li:before {
+	content: "../";
+}
+
+@media screen and (max-width: 632px) {
+	#name {
+		display: none;
+	}
+	#bgimg {
+		bottom: auto;
+		top: 10;
+	}
 }
