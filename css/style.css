@@ -48,13 +48,13 @@ a:hover {
 #name {
 	position: relative;
 	font-size: 4rem;
-	top: 5%;
+	top: 10px;
 	left: 10px;
 }
 
 #fm {
 	position: relative;
-	top: 4%;
+	top: 8px;
 	text-align: left;
 	left: 50px;
 	font-size: 1.5rem;
@@ -73,7 +73,8 @@ a:hover {
 		display: none;
 	}
 	#bgimg {
-		bottom: auto;
-		top: 10;
+		right: auto;
+		left: 10;
+		opacity: 0.2;
 	}
 }
