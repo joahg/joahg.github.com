@@ -59,6 +59,17 @@ a:hover {
 	left: 50;
 	font-size: 1.5rem;
 	z-index: 100;
+	float: left;
+}
+
+#am {
+	position: relative;
+	top: 100px;
+	text-align: left;
+	left: 100px;
+	font-size: 1rem;
+	z-index: 100;
+	float: left;
 }
 
 #l li {
@@ -67,6 +78,12 @@ a:hover {
 }
 #l li:before {
 	content: "../";
+}
+
+@media screen and (max-width: 716px) {
+	#am {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 632px) {
@@ -84,7 +101,6 @@ a:hover {
 	    position:absolute;
 	}
 	#bgimg {
-		
 		opacity: 0.1;
 	}
 	#fm {
