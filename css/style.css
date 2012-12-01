@@ -56,8 +56,9 @@ a:hover {
 	position: relative;
 	top: 8px;
 	text-align: left;
-	left: 50px;
+	left: 50;
 	font-size: 1.5rem;
+	z-index: 100;
 }
 
 #l li {
@@ -70,11 +71,23 @@ a:hover {
 
 @media screen and (max-width: 632px) {
 	#name {
-		display: none;
+		-webkit-transform: rotate(270deg) skew(0deg, 0);
+	       -moz-transform: rotate(270deg) skew(0deg, 0);
+	        -ms-transform: rotate(270deg) skew(0deg, 0);
+	         -o-transform: rotate(270deg) skew(0deg, 0);
+	            transform: rotate(270deg) skew(0deg, 0);
+	    top: 180;
+	    left: -160;
+	    z-index: -100;
+	    font-size: 4em;
+	    text-align: right;
+	    position:absolute;
 	}
 	#bgimg {
-		right: auto;
-		left: 10;
-		opacity: 0.2;
+		
+		opacity: 0.1;
+	}
+	#fm {
+		left: 60;
 	}
 }
