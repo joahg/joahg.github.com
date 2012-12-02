@@ -80,7 +80,7 @@ a:hover {
 	content: "../";
 }
 
-@media screen and (max-width: 716px) {
+@media screen and (max-width: 736px) {
 	#am {
 		display: none;
 	}
