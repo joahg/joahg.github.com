@@ -21,6 +21,7 @@ body {
 	font-size: 62.5%;
 	font-family: "Lucida Console", "Monaco", monospace;
 	z-index: -1;
+	overflow-x:hidden;
 }
 
 a {
@@ -39,7 +40,7 @@ a:hover {
 
 #bgimg {
 	opacity: 0.5;
-	position: absolute;
+	position: fixed;
 	z-index: 1;
 	bottom: 10;
 	right: 10;
