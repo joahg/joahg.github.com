@@ -2,8 +2,14 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="icon" type="image/ico" href="img/favicon.png" />
-	<script src="jquery.js"></script>
-	<script src="script.js"></script>
+
+	<script src="js/jquery.js"></script>
+	<script>
+		$().ready(function(){
+			$("#am").css("top", ((100 - ($("#am").height()/$("body").height() * 100))/2).toString() + "%")	
+		});
+	</script>
+
 	<title> Joah Gerstenberg </title>
 </head>
 <body>

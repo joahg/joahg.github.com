@@ -64,10 +64,10 @@ a:hover {
 }
 
 #am {
-	position: relative;
+	position: fixed;
 	top: 150px;
 	text-align: left;
-	left: 100px;
+	left: 290px;
 	font-size: 1rem;
 	z-index: 100;
 	float: left;
