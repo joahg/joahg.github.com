@@ -47,11 +47,11 @@ $(document).ready(function(){
 	$(".mobile-nav-trigger").click(function(){
 		$("nav ul").toggle("blind", {direction: "vertical"}, 300)
 	});
-	if (mobile) {
-		$("nav ul li a").click(function(){
+	$("nav ul li a").click(function(){
+		if (mobile) {
 			$(".mobile-nav-trigger").click();
-		})
-	}
+		}
+	})
 
 	$("nav a[href^=#]").click(function(e){
 		e.preventDefault();
