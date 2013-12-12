@@ -49,7 +49,7 @@ nav ul li a.active {
   color: #000 !important;
 }
 
-a[data-nav-trigger] {
+a.trigger {
   cursor: pointer;
 }
 
