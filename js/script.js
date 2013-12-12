@@ -72,6 +72,10 @@ $(document).ready(function(){
 		// END Google Analytics
 	});
 
+	$("a[data-nav-trigger]").click(function(){
+		$("#nav-"+$(this).attr("data-nav-trigger")).click();
+	});
+
 	if (document.location.hash === "" || document.getElementById(document.location.hash.substr(1,document.location.hash.length-1)) == null) {
 		document.location.hash = "#!/";
 		$("#nav-home").addClass("active");
