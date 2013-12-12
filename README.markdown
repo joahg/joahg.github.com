@@ -1,3 +1,3 @@
-#joahg.github.com
+#[joahg.github.com](http://www.joahg.com)
 
-GitHub pages repo for my GitHub Account. Essentially just a static file server hosted at [git.joahg.com](http://git.joahg.com).
+My personal website. Used to be hosted [on Heroku](http://joahg.herokuapp.com) with files from [JoahG/joahg.com](https:/github.com/JoahG/joahg.com), but is now a pureply static website, and is more efficient than being built on Ruby on Rails.
