@@ -13,3 +13,15 @@
 #ltie9 * {
 	position: relative;
 }
+
+nav ul li a {
+	cursor: default;
+}
+
+nav ul li a:hover {
+	color:#555 !important;
+}
+
+nav ul li a.active {
+	color: #555 !important;
+}
