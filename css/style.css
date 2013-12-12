@@ -2,6 +2,10 @@ body {
   max-height: 100%;
 }
 
+#ltie9 {
+  display:none;
+}
+
 .state {
   display: block;
   -webkit-transition: opacity 0.2s ease-in-out;

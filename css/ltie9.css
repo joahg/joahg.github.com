@@ -1,0 +1,15 @@
+.state {
+	display:none !important;
+}
+
+#ltie9 {
+	display: block;
+	position:absolute;
+	height: 100%;
+	margin-top: -60px;
+	padding-top: 60px;
+}
+
+#ltie9 * {
+	position: relative;
+}
