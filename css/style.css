@@ -144,13 +144,13 @@ input, textarea {
   text-align: center;
 }
 
-#gridize {
+.gridize {
   margin-top: 20px;
 }
-#gridize div.row div.four.columns .img {
+.gridize div.row div.four.columns .img {
   margin-top: 10px;
 }
-#gridize div.row div.four.columns p {
+.gridize div.row div.four.columns p {
   margin: 0 10px 20px;
   font-style: italic;
 }
