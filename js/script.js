@@ -40,6 +40,13 @@ $(document).ready(function(){
 	if (mobile) {
 		$(".nav-clearfix").remove()
 	}
+	$("a[data-nav-trigger]").click(function(){
+		$(".nav_"+$(this).attr("data-nav-trigger")).click()
+		return false
+	});
+	$(".mobile-nav-trigger").click(function(){
+		$("nav ul").toggle("blind", {direction: "vertical"}, 300)
+	});
 
 	$("nav a[href^=#]").click(function(e){
 		e.preventDefault();
