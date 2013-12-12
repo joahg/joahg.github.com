@@ -45,7 +45,7 @@ nav ul {
   display: block;
 }
 
-li a.active {
+nav ul li a.active {
   color: #000 !important;
 }
 
@@ -207,7 +207,7 @@ input, textarea {
     color: white !important;
   }
 
-  nav ul li.active a {
+  nav ul li a.active {
     color: white !important;
   }
 }

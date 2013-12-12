@@ -47,6 +47,11 @@ $(document).ready(function(){
 	$(".mobile-nav-trigger").click(function(){
 		$("nav ul").toggle("blind", {direction: "vertical"}, 300)
 	});
+	if (mobile) {
+		$("nav ul li a").click(function(){
+			$(".mobile-nav-trigger").click();
+		})
+	}
 
 	$("nav a[href^=#]").click(function(e){
 		e.preventDefault();
@@ -66,3 +71,18 @@ $(document).ready(function(){
 
 	gridize();
 });
+
+$(window).resize(function(){
+	if ($(window).width() >= 767) {
+		$("nav ul").show()
+		mobile = false
+		if ($(".nav-clearfix").length === 0) {
+			$(".sidebar").append(navclearfix)
+		}
+	}
+	if ($(window).width() <= 767) {
+		$("nav ul").hide()
+		mobile = true
+		$(".nav-clearfix").remove()
+	}
+})
