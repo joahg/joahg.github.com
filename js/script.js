@@ -72,7 +72,8 @@ $(document).ready(function(){
 		// END Google Analytics
 	});
 
-	$("a[data-nav-trigger]").click(function(){
+	$("a[data-nav-trigger]").click(function(e){
+		e.preventDefault();
 		$("#nav-"+$(this).attr("data-nav-trigger")).click();
 	});
 
