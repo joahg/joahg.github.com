@@ -55,7 +55,7 @@ $(document).ready(function(){
 
 	$("nav a[href^=#]").click(function(e){
 		e.preventDefault();
-		history.pushState({}, "", this.href);
+		history.pushState({}, document.title, this.href);
 		window.location.href = $(this).attr("href")
 		$("body").scrollTop(0);
 		$("nav a.active").removeClass("active");
