@@ -27,7 +27,7 @@ $(document).ready(function(){
 		$(v).css('left', i*900);
 	});
 	function right_click() {
-		if (!$('.left-arrow').hasClass('inactive')){
+		if (!$('.right-arrow').hasClass('inactive')){
 			$(".slider ul").css('left', (left-900).toString()+'px');
 			index_shown += 1;
 			check_activity();
