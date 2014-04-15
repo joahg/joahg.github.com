@@ -27,16 +27,20 @@ $(document).ready(function(){
 		$(v).css('left', i*900);
 	});
 	function right_click() {
-		$(".slider ul").css('left', (left-900).toString()+'px');
-		index_shown += 1;
-		check_activity();
-		left -= 900;
+		if (!$('.left-arrow').hasClass('inactive')){
+			$(".slider ul").css('left', (left-900).toString()+'px');
+			index_shown += 1;
+			check_activity();
+			left -= 900;
+		}
 	}
 	function left_click() {
-		$(".slider ul").css('left', (left+900).toString()+'px');
-		index_shown -= 1;
-		check_activity();
-		left += 900;
+		if (!$('.left-arrow').hasClass('inactive')){
+			$(".slider ul").css('left', (left+900).toString()+'px');
+			index_shown -= 1;
+			check_activity();
+			left += 900;
+		}
 	}	
 	$(document).on('click', ".slider .right-arrow:not(.inactive)", function() {
 		right_click();
@@ -46,7 +50,7 @@ $(document).ready(function(){
 		left_click();
 	});
 	$(".slider").touchwipe({
-	     wipeLeft: function() {left_click();},
-    	 wipeRight: function() {right_click();},
+	     wipeLeft: function() {right_click();},
+    	 wipeRight: function() {left_click();},
     });
 })
