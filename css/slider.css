@@ -1,0 +1,113 @@
+.slider {
+	position: relative;
+	width: 100%;
+	height: 462px;
+	margin-top: 65px;
+}
+
+.slider * {
+	position: absolute;
+}
+
+.slider .left-arrow:not(.inactive), .slider .right-arrow:not(.inactive) {
+	cursor:pointer;
+}
+
+.slider .left-arrow, .slider .right-arrow {
+	position: absolute;
+	height: 60px;
+	margin-top: 20%;
+	z-index: 2;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+}
+
+.slider .left-arrow {
+	left: -100px;
+}
+
+.slider .right-arrow {
+	right: -100px;
+}
+
+.slider .left-arrow:not(.inactive):hover {
+	left: -102px;
+}
+
+.slider .right-arrow:not(.inactive):hover {
+	right: -102px;
+}
+
+.slider ul {
+	width: 100%;
+	position: absolute;
+	left: 64.5px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.slider ul li {
+	display: inline;
+	position:absolute;
+	height: 400px;
+}
+
+.slider ul li > a {
+	display:inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+.slider ul li:not(:last-child) {
+	margin-right: 100px;
+}
+
+.slider ul li div.info {
+	position:absolute;
+	z-index: 1;
+	bottom: -10px;
+	right: -10px;
+	width: 100%;
+	height: 75px;
+	background-color: rgba(0,0,0);
+	background-color: rgba(0,0,0,0.8);
+	color:white;
+	padding: 10px;
+}
+
+.slider ul li div.info * {
+	position:relative;
+}
+
+.slider ul li div.info header {
+  font-size: 1.4em;
+  font-family: 'Exo', sans-serif;
+  top: 5px;
+  bottom: 10px;
+  font-weight: bold;
+}
+
+.slider ul li div.info p {
+	font-size: 1.1em;
+	font-family: 'Brawler', serif;
+	top: 15px;
+}
+
+.slider ul li div.info p a {
+	color: white;
+}
+
+.slider ul li div.info p a:hover {
+	color: #ddd;
+}
+
+.slider ul li img {
+	position: absolute;
+	height: 400px;
+	text-align: center;
+	z-index: 0;
+}

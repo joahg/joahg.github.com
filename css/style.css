@@ -1,0 +1,73 @@
+@import url(http://fonts.googleapis.com/css?family=Brawler|Exo:100,400);
+
+.preload {
+  visibility:hidden;
+  height:0;
+  width:0;
+}
+
+body > header {
+  background-color: #f9f9f9;
+  border-bottom: 3px solid #ccc;
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+body > header a {
+  text-decoration: none;
+  color: #444;
+}
+
+body > header a:hover {
+  color: #444;
+}
+
+body > header .joah-face {
+  height: 150px;
+  width: 150px;
+  border-radius: 50.5%;
+  border: 3px solid #ccc;
+  display: inline-block;
+  margin: 20px 10px -65px auto;
+}
+
+body > header .head {
+  font-family: 'Exo', sans-serif;
+  font-size: 3em;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+section {
+  overflow-x: hidden;
+}
+
+article {
+  display: block;
+  margin-top: 40px;
+  padding-bottom: 30px;
+}
+
+article:not(:last-child) {
+  border-bottom: 5px solid #ddd;
+}
+
+article > header {
+  font-size: 2.5em;
+  font-family: 'Exo', sans-serif;
+  margin-bottom: 15px;
+}
+
+article > p {
+  font-family: 'Brawler', serif;
+  font-size: 1.2em;
+  margin: 20px 0 0 0;
+}
+
+footer .container {
+  font-family: 'Brawler', serif;
+  text-align:center;
+  margin: 30px auto 40px;
+  padding-top: 50px;
+  border-top: 3px solid #eee;
+}
