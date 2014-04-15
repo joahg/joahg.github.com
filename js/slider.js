@@ -26,17 +26,27 @@ $(document).ready(function(){
 	$(".slider ul li").each(function(i,v) {
 		$(v).css('left', i*900);
 	});
-	$(document).on('click', ".slider .right-arrow:not(.inactive)", function() {
+	function right_click() {
 		$(".slider ul").css('left', (left-900).toString()+'px');
 		index_shown += 1;
 		check_activity();
 		left -= 900;
-	});
-
-	$(document).on('click', ".slider .left-arrow:not(.inactive)", function() {
+	}
+	function left_click() {
 		$(".slider ul").css('left', (left+900).toString()+'px');
 		index_shown -= 1;
 		check_activity();
 		left += 900;
+	}	
+	$(document).on('click', ".slider .right-arrow:not(.inactive)", function() {
+		right_click();
 	});
+
+	$(document).on('click', ".slider .left-arrow:not(.inactive)", function() {
+		left_click();
+	});
+	$(".slider").touchwipe({
+	     wipeLeft: function() {left_click();},
+    	 wipeRight: function() {right_click();},
+    });
 })
