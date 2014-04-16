@@ -49,6 +49,17 @@ $(document).ready(function(){
 	$(document).on('click', ".slider .left-arrow:not(.inactive)", function() {
 		left_click();
 	});
+	$('.slider ul').on('click', "li > a", function(e){
+		if ($(this).parent().index() !== index_shown) {
+			e.preventDefault();
+			if ($(this).parent().index() < index_shown) {
+				left_click();
+			}
+			if ($(this).parent().index() > index_shown) {
+				right_click();
+			}
+		}
+	})
 	$(".slider").touchwipe({
 	     wipeLeft: function() {right_click();},
     	 wipeRight: function() {left_click();},
