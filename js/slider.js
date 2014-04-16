@@ -20,7 +20,7 @@ $(document).ready(function(){
 	$(".slider ul li img").each(function(i,v) {
 		indices += 1;
 		w += $(v).width() + 100;
-		$(v).parent().parent().width($(v).width())
+		// $(v).parent().parent().width($(v).width())
 	});
 	$(".slider ul").width(w);
 	$(".slider ul li").each(function(i,v) {

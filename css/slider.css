@@ -54,6 +54,7 @@
 	display: inline;
 	position:absolute;
 	height: 400px;
+	width: 640px;
 }
 
 .slider ul li > a {
