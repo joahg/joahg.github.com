@@ -138,7 +138,7 @@
 	color: white;
 }
 
-.slider ul li div.info p a:hover {
+.slider ul li.current div.info p a:hover {
 	color: #ddd;
 }
 
