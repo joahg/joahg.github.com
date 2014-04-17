@@ -3,6 +3,16 @@ $(document).ready(function(){
 	indices = 0;
 	index_shown = 0;
 	left = 64.5;
+
+	$(".slider ul li img").each(function(i,v) {
+		indices += 1;
+		w += $(v).width() + 100;
+	});
+	$(".slider ul").width(w);
+	$(".slider ul li").each(function(i,v) {
+		$(v).css('left', i*900);
+	});
+
 	function check_activity() {
 		if (index_shown <= 0) {
 			$(".left-arrow").addClass('inactive').attr('src', 'img/chevron-left-inactive.png');
@@ -17,20 +27,16 @@ $(document).ready(function(){
 			$(".right-arrow").removeClass('inactive').attr('src', 'img/chevron-right.png');
 		}
 	}
-	$(".slider ul li img").each(function(i,v) {
-		indices += 1;
-		w += $(v).width() + 100;
-		// $(v).parent().parent().width($(v).width())
-	});
-	$(".slider ul").width(w);
-	$(".slider ul li").each(function(i,v) {
-		$(v).css('left', i*900);
-	});
+	function change_current() {
+		$('.slider ul li').removeClass('current');
+		$('.slider ul li:nth-child('+(index_shown+1)+')').addClass('current');
+	}
 	function right_click() {
 		if (!$('.right-arrow').hasClass('inactive')){
 			$(".slider ul").css('left', (left-900).toString()+'px');
 			index_shown += 1;
 			check_activity();
+			change_current();
 			left -= 900;
 		}
 	}
@@ -39,9 +45,11 @@ $(document).ready(function(){
 			$(".slider ul").css('left', (left+900).toString()+'px');
 			index_shown -= 1;
 			check_activity();
+			change_current();
 			left += 900;
 		}
-	}	
+	}
+
 	$(document).on('click', ".slider .right-arrow:not(.inactive)", function() {
 		right_click();
 	});
@@ -49,13 +57,13 @@ $(document).ready(function(){
 	$(document).on('click', ".slider .left-arrow:not(.inactive)", function() {
 		left_click();
 	});
-	$('.slider ul').on('click', "li > a", function(e){
-		if ($(this).parent().index() !== index_shown) {
+	$('.slider ul').on('click', "li", function(e){
+		if ($(this).index() !== index_shown) {
 			e.preventDefault();
-			if ($(this).parent().index() < index_shown) {
+			if ($(this).index() < index_shown) {
 				left_click();
 			}
-			if ($(this).parent().index() > index_shown) {
+			if ($(this).index() > index_shown) {
 				right_click();
 			}
 		}
