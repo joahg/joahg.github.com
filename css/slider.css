@@ -61,6 +61,10 @@
 	position:absolute;
 	height: 400px;
 	width: 640px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .slider ul li > a {
@@ -120,6 +124,14 @@
 
 .slider ul li:not(.current) * {
 	cursor:pointer !important;
+}
+
+.slider ul li:not(.current) {
+	opacity: 0.3;
+}
+
+.slider ul li:not(.current):hover {
+	opacity: 0.4;
 }
 
 .slider ul li div.info p a {
