@@ -31,41 +31,23 @@ $(document).ready(function(){
 		$('.slider ul li').removeClass('current');
 		$('.slider ul li:nth-child('+(index_shown+1)+')').addClass('current');
 	}
-	function right_click() {
-		if (!$('.right-arrow').hasClass('inactive')){
-			$(".slider ul").css('left', (left-900).toString()+'px');
-			index_shown += 1;
-			check_activity();
-			change_current();
-			left -= 900;
-		}
-	}
-	function left_click() {
-		if (!$('.left-arrow').hasClass('inactive')){
-			$(".slider ul").css('left', (left+900).toString()+'px');
-			index_shown -= 1;
-			check_activity();
-			change_current();
-			left += 900;
-		}
+	function goto_slide(n) {
+		$(".slider ul").css('left', (left + (n * (-900))).toString()+'px');
+		index_shown = n;
+		change_current();
+		check_activity();
 	}
 
 	$(document).on('click', ".slider .right-arrow:not(.inactive)", function() {
-		right_click();
+		goto_slide(index_shown+1)
 	});
-
 	$(document).on('click', ".slider .left-arrow:not(.inactive)", function() {
-		left_click();
+		goto_slide(index_shown-1)
 	});
-	$('.slider ul').on('click', "li", function(e){
+	$('.slider ul').on('click', "li:not(.current)", function(e){
 		if ($(this).index() !== index_shown) {
 			e.preventDefault();
-			if ($(this).index() < index_shown) {
-				left_click();
-			}
-			if ($(this).index() > index_shown) {
-				right_click();
-			}
+			goto_slide($(this).index());
 		}
 	})
 	$(".slider").touchwipe({
