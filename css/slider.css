@@ -38,14 +38,6 @@
 	right: -100px;
 }
 
-.slider .left-arrow:not(.inactive):hover {
-	left: -102px;
-}
-
-.slider .right-arrow:not(.inactive):hover {
-	right: -102px;
-}
-
 .slider ul {
 	width: 100%;
 	position: absolute;
@@ -94,10 +86,6 @@
 	transition: all 0.3s ease-in-out;
 }
 
-.slider ul li:hover div.info {
-	background-color: rgba(0,0,0,0.8);
-}
-
 .slider ul li div.info * {
 	position:relative;
 }
@@ -130,16 +118,8 @@
 	opacity: 0.3;
 }
 
-.slider ul li:not(.current):hover {
-	opacity: 0.4;
-}
-
 .slider ul li div.info p a {
 	color: white;
-}
-
-.slider ul li.current div.info p a:hover {
-	color: #ddd;
 }
 
 .slider ul li img {
@@ -147,4 +127,26 @@
 	height: 400px;
 	text-align: center;
 	z-index: 0;
+}
+
+/* Make hover events Desktop only */
+@media only screen and (min-width: 768px) {
+	.slider .left-arrow:not(.inactive):hover {
+		left: -102px;
+	}
+
+	.slider .right-arrow:not(.inactive):hover {
+		right: -102px;
+	}
+
+	.slider ul li:hover div.info {
+		background-color: rgba(0,0,0,0.8);
+	}
+	.slider ul li:not(.current):hover {
+		opacity: 0.4;
+	}
+
+	.slider ul li.current div.info p a:hover {
+		color: #ddd;
+	}
 }

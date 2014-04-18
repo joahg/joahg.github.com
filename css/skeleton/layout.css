@@ -26,21 +26,52 @@
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) {
-		.mobile {
+		/*.mobile {
 			display: none;
 		}
 		.desktop {
 			display: inherit;
-		}
+		}*/
 	}
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
-		.desktop {
+		/*.desktop {
 			display: none;
 		}
 		.mobile {
 			display: inherit;
+		}*/
+		article#portfolio {
+			height: 425px;
+		}
+		.slider {
+			margin-top: 30px;
+		}
+		.slider * {
+			position: static;
+		}
+		.slider ul {
+			left: 0;
+		}
+		.slider ul li {
+			width: 100%;
+			height: auto;
+		}
+		.slider ul li img {
+			width: 100%;
+			height: auto;
+			position:static;
+		}
+		/*.slider ul li div.info {
+			height: 40%;
+		}*/
+		.slider ul li div.info p {
+			top: 5px;
+			font-size: 0.9em;
+		}
+		.slider .left-arrow, .slider .right-arrow {
+			display:none;
 		}
 		body > header .joah-face {
 			margin-bottom: 0;
@@ -57,10 +88,16 @@
 	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		
+	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
+	@media only screen and (max-width: 479px) {
+		article#portfolio {
+			height: 360px;
+		}
+	}
 
 
 /* #Font-Face
