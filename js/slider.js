@@ -1,11 +1,12 @@
 $(document).ready(function(){
 	indices = $(".slider ul li").length;
 	index_shown = 0;
-	left = parseFloat($(".slider ul").css('left'));
 	if ($(window).width() < 767) {
 		magic_number = 500;
+		left = 0;
 	} else {
 		magic_number = 900;
+		left = 64.5;
 	}
 
 	$(".slider ul li").each(function(i,v) { $(v).css('left', i*magic_number); });
