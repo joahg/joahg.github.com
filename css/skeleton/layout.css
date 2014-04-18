@@ -26,24 +26,24 @@
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) {
-		/*.mobile {
+		.mobile {
 			display: none;
 		}
 		.desktop {
 			display: inherit;
-		}*/
+		}
 	}
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
-		/*.desktop {
+		.desktop {
 			display: none;
 		}
 		.mobile {
 			display: inherit;
-		}*/
+		}
 		article#portfolio {
-			height: 400px;
+			height: 450px;
 		}
 		.slider {
 			margin-top: 30px;
@@ -93,7 +93,7 @@
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
 		article#portfolio {
-			height: 340px;
+			height: 400px;
 		}
 		.slider {
 			height: 210px;
