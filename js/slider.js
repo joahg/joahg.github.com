@@ -2,7 +2,7 @@ $(document).ready(function(){
 	indices = $(".slider ul li").length;
 	index_shown = 0;
 	left = parseFloat($(".slider ul").css('left'));
-	if ($(window).width() < 479) {
+	if ($(window).width() < 767) {
 		magic_number = 500;
 	} else {
 		magic_number = 900;
