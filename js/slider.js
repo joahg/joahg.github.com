@@ -27,11 +27,11 @@ $(document).ready(function(){
 
 	$(".slider").touchwipe({ 
 		wipeLeft: function() {
-			if (!($(".right-arrow").hasClass('inactive')))
+			if (!($(".right-arrow").hasClass('inactive'))) {
 				goto_slide(index_shown+1);
 			}
 		}, wipeRight: function() {
-			if (!($(".left-arrow").hasClass('inactive')))
+			if (!($(".left-arrow").hasClass('inactive'))) {
 				goto_slide(index_shown-1)
 			}
 		} 
