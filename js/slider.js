@@ -2,8 +2,13 @@ $(document).ready(function(){
 	indices = $(".slider ul li").length;
 	index_shown = 0;
 	left = parseFloat($(".slider ul").css('left'));
+	if ($(window).width() < 479) {
+		magic_number = 500;
+	} else {
+		magic_number = 900;
+	}
 
-	$(".slider ul li").each(function(i,v) { $(v).css('left', i*900); });
+	$(".slider ul li").each(function(i,v) { $(v).css('left', i*magic_number); });
 
 	function check_activity() {
 		if (index_shown <= 0) { $(".left-arrow").addClass('inactive').attr('src', 'img/chevron-left-inactive.png'); }
@@ -13,7 +18,7 @@ $(document).ready(function(){
 	}
 
 	function goto_slide(n) {
-		$(".slider ul").css('left', (left + (n * (-900))).toString()+'px');
+		$(".slider ul").css('left', (left + (n * (0-magic_number))).toString()+'px');
 		index_shown = n;
 		$('.slider ul li').removeClass('current');
 		$('.slider ul li:nth-child('+(index_shown+1)+')').addClass('current');
