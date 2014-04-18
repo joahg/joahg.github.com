@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	indices = $(".slider ul li").length;
 	index_shown = 0;
+	left = $(".slider ul").css('left');
 
 	$(".slider ul li").each(function(i,v) { $(v).css('left', i*900); });
 
@@ -12,7 +13,7 @@ $(document).ready(function(){
 	}
 
 	function goto_slide(n) {
-		$(".slider ul").css('left', (64.5 + (n * (-900))).toString()+'px');
+		$(".slider ul").css('left', (left + (n * (-900))).toString()+'px');
 		index_shown = n;
 		$('.slider ul li').removeClass('current');
 		$('.slider ul li:nth-child('+(index_shown+1)+')').addClass('current');
@@ -24,5 +25,5 @@ $(document).ready(function(){
 
 	$('.slider ul').on('click', "li:not(.current)", function(e){ e.preventDefault(); goto_slide($(this).index()); });
 
-	$(".slider").touchwipe({ wipeLeft: function() {right_click();}, wipeRight: function() {left_click();} });
+	$(".slider").touchwipe({ wipeLeft: function() {goto_slide(index_shown+1)}, wipeRight: function() {goto_slide(index_shown-1)} });
 });

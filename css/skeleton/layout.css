@@ -43,10 +43,11 @@
 			display: inherit;
 		}*/
 		article#portfolio {
-			height: 425px;
+			height: 400px;
 		}
 		.slider {
 			margin-top: 30px;
+			height: 285px;
 		}
 		.slider * {
 			position: static;
@@ -63,9 +64,6 @@
 			height: auto;
 			position:static;
 		}
-		/*.slider ul li div.info {
-			height: 40%;
-		}*/
 		.slider ul li div.info p {
 			top: 5px;
 			font-size: 0.9em;
@@ -95,7 +93,10 @@
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
 		article#portfolio {
-			height: 360px;
+			height: 340px;
+		}
+		.slider {
+			height: 210px;
 		}
 	}
 
