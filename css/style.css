@@ -80,3 +80,11 @@ footer .container {
   padding-top: 50px;
   border-top: 3px solid #eee;
 }
+
+.no-touch .touch-only {
+  display:none;
+}
+
+.touch .touch-only {
+  display:inherit;
+}
