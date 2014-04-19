@@ -29,6 +29,9 @@
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
+		article {
+			margin-top: 20px;
+		}
 		article#portfolio {
 			height: 450px;
 		}
@@ -62,9 +65,9 @@
 			margin-bottom: 0;
 		}
 
-		body > header .head {
+		body > header .head, body article > header {
 			position: relative;
-			line-height: 30px;
+			line-height: 40px;
 			margin-top: 0;
 		}
 		article:first-child {
