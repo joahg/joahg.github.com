@@ -1,5 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Brawler|Exo:100,400);
 
+a {
+  text-decoration: none;
+  border-bottom: 1px dotted #333;
+}
+
+a:hover {
+  border-bottom: 1px solid #333;
+}
+
 .preload {
   visibility:hidden;
   height:0;
