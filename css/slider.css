@@ -122,7 +122,15 @@
 	color: white;
 }
 
-.slider ul li img {
+.slider ul li > a {
+	border: none;
+}
+
+.slider ul li > a:hover {
+	border: none;
+}
+
+.slider ul li > a img {
 	position: absolute;
 	height: 400px;
 	text-align: center;
