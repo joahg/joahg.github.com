@@ -15,6 +15,7 @@ a:hover {
 
 body {
   font-family: 'Brawler', serif;
+  position: relative;
 }
 
 body > header {
@@ -94,4 +95,36 @@ footer .container {
 
 .touch .touch-only {
   display:inherit;
+}
+
+.view {
+    position: absolute;
+    /*top: 165px;*/
+    left: 0;
+    right: 0;
+    height: 100%;
+    opacity: 1;
+}
+.view.ng-enter,
+.view.ng-leave {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.view.ng-enter {
+    opacity: 0;
+}
+
+.view.ng-enter-active {
+    opacity: 1;
+}
+
+.view.ng-leave {
+    opacity: 1;
+}
+
+.view.ng-leave-active {
+    opacity: 0;
 }

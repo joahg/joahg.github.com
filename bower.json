@@ -12,6 +12,7 @@
     "angular-scenario": "1.2.15"
   },
   "resolutions": {
-    "angular-mocks": "1.2.15"
+    "angular-mocks": "1.2.15",
+    "angular": "1.2.15"
   }
 }

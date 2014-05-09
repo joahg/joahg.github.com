@@ -2,6 +2,7 @@
 
 var app = angular.module('joahg', [
     'ngRoute',
+    'ngAnimate',
     'yaru22.md'
   ]);
 
