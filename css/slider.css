@@ -130,7 +130,7 @@
 	border: none;
 }
 
-.slider ul li > a img {
+.slider ul li img {
 	position: absolute;
 	height: 400px;
 	text-align: center;
