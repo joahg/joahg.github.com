@@ -25,6 +25,11 @@ body > header {
 body > header a {
   text-decoration: none;
   color: #444;
+  border:none;
+}
+
+body > header a:hover {
+  border:none;
 }
 
 body > header a:hover {

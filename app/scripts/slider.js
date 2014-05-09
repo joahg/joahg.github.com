@@ -15,10 +15,10 @@ $(document).ready(function(){
 	$(".slider ul li").each(function(i,v) { $(v).css('left', i*magic_number); });
 
 	function check_activity() {
-		if (index_shown <= 0) { $(".left-arrow").addClass('inactive').attr('src', 'img/chevron-left-inactive.png'); }
-		if (index_shown >= indices-1) { $(".right-arrow").addClass('inactive').attr('src', 'img/chevron-right-inactive.png'); }
-		if (index_shown > 0) { $(".left-arrow").removeClass('inactive').attr('src', 'img/chevron-left.png'); }
-		if (index_shown < indices-1) { $(".right-arrow").removeClass('inactive').attr('src', 'img/chevron-right.png'); }
+		if (index_shown <= 0) { $(".left-arrow").addClass('inactive').attr('src', 'images/chevron-left-inactive.png'); }
+		if (index_shown >= indices-1) { $(".right-arrow").addClass('inactive').attr('src', 'images/chevron-right-inactive.png'); }
+		if (index_shown > 0) { $(".left-arrow").removeClass('inactive').attr('src', 'images/chevron-left.png'); }
+		if (index_shown < indices-1) { $(".right-arrow").removeClass('inactive').attr('src', 'images/chevron-right.png'); }
 	}
 
 	function goto_slide(n) {
