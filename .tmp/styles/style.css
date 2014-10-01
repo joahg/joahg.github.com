@@ -1,0 +1,129 @@
+a {
+  text-decoration: none;
+  border-bottom: 1px dotted #333;
+}
+
+a:hover {
+  border-bottom: 1px solid #333;
+}
+
+.preload {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+body {
+  position: relative;
+}
+
+body > header {
+  background-color: #f9f9f9;
+  border-bottom: 3px solid #ccc;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+body > header a {
+  text-decoration: none;
+  color: #444;
+  border: none;
+}
+
+body > header a:hover {
+  border: none;
+}
+
+body > header a:hover {
+  color: #444;
+}
+
+body > header .joah-face {
+  height: 150px;
+  width: 150px;
+  border-radius: 50.5%;
+  border: 3px solid #ccc;
+  display: inline-block;
+  margin: 20px 10px -65px auto;
+}
+
+body > header .head {
+  font-family: 'Exo', sans-serif;
+  font-size: 3em;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+section {
+  overflow-x: hidden;
+}
+
+article {
+  display: block;
+  margin-top: 40px;
+  padding-bottom: 30px;
+}
+
+article:not(:last-child) {
+  border-bottom: 5px solid #ddd;
+}
+
+article > header {
+  font-size: 2.5em;
+  font-family: 'Exo', sans-serif;
+  margin-bottom: 15px;
+}
+
+article > p {
+  font-size: 1.2em;
+  margin: 20px 0 0 0;
+}
+
+footer .container {
+  text-align: center;
+  margin: 30px auto 40px;
+  padding-top: 50px;
+  border-top: 3px solid #eee;
+}
+
+.no-touch .touch-only {
+  display: none;
+}
+
+.touch .touch-only {
+  display: inherit;
+}
+
+.view {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  opacity: 1;
+  z-index: 1;
+}
+
+.view.ng-enter,
+.view.ng-leave {
+  transition: all 0.3s ease;
+}
+
+.view.ng-enter {
+  opacity: 0;
+  z-index: -1;
+  /*float:right;*/
+}
+
+.view.ng-enter-active {
+  opacity: 1;
+}
+
+.view.ng-leave {
+  opacity: 1;
+  z-index: -2;
+}
+
+.view.ng-leave-active {
+  opacity: 0;
+}
