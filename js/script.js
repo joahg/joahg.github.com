@@ -6,17 +6,9 @@ $(document).ready(function() {
     left_offset_desktop: 64.5,
     pagination: true,
     callback: function(slide) {
-      $('.largebg').css('background-image', 'url(' + $(slide).find('img').attr('src') + ')')
+      $('.largebg').css('background-image', 'url(' + ($(slide).find('img').attr('src').split('.').join('-blur.')).split('slider').join('bg') + ')')
     }
   });
-
-  $(window).scroll(function() {
-    $('[class*="bg_"]').each(function() {
-      $(this).css('background-image', $(this).css('background-image'))
-    });
-
-  })
-  
 
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

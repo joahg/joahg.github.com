@@ -35,19 +35,11 @@ body {
 }
 
 .bg__one {
-  background-image: url(../img/bg/matrix.png);
-  -webkit-filter: blur(2px);
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
+  background-image: url(../img/bg/matrix-blur.png);
 }
 
 .bg__two {
-  background-image: url(../img/slider/chsxyz.png);
-  -webkit-filter: blur(8px);
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
+  background-image: url(../img/bg/chsxyz-blur.png);
 }
 
 .ov__two .container {
