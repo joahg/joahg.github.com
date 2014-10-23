@@ -29,9 +29,6 @@
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
-		article {
-			margin-top: 20px;
-		}
 		article#portfolio {
 			height: 465px;
 		}
@@ -60,18 +57,6 @@
 		}
 		.slider .left-arrow, .slider .right-arrow {
 			display:none;
-		}
-		body > header .joah-face {
-			margin-bottom: 0;
-		}
-
-		body > header .head, body article > header {
-			position: relative;
-			line-height: 40px;
-			margin-top: 0;
-		}
-		article:first-child {
-			margin-top: 0;
 		}
 	}
 
