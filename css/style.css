@@ -29,7 +29,7 @@ body {
 [class*="ov_"] {
   height: 95vh;
   margin-top: 5vh;
-  position: static;
+  position: relative;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -63,7 +63,9 @@ body {
    width: 400px;
    height: 300px;
    position: absolute;
-   top: 25vh;
+   top: 0;
+   bottom: 0;
+   margin: auto;
    left: 50vw;
    margin-left: -200px;
    text-align: center;
