@@ -4,97 +4,30 @@ body {
   position: relative;
 }
 
-.bgs, .ovs {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+main > section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-}
-
-.bgs {
-  z-index: -1;
-}
-
-[class*="bg_"] {
-  height: 100vh;
-  position: relative;
+  padding: 0;
+  margin: 0;
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-}
-
-[class*="ov_"] {
-  height: 95vh;
-  margin-top: 5vh;
-  position: relative;
   overflow-x: hidden;
   overflow-y: hidden;
 }
 
-.bg__one {
+.matrix {
   background-image: url(../img/bg/matrix-blur.png);
 }
 
-.bg__two {
-  background-image: url(../img/bg/chsxyz-blur.png);
-}
-
-.ov__two .container {
-  height: 90vh;
-  margin: 1vh auto;
-  background-color: rgb(255, 255, 255);
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-
-.largebg {
-  -webkit-transition: background-image 0.2s ease-in-out;
-  -moz-transition: background-image 0.2s ease-in-out;
-  -ms-transition: background-image 0.2s ease-in-out;
-  -o-transition: background-image 0.2s ease-in-out;
-  transition: background-image 0.2s ease-in-out;
-}
-
-
-.center {
-   width: 400px;
-   height: 300px;
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   margin: auto;
-   left: 50vw;
-   margin-left: -200px;
-   text-align: center;
-   display: block;
-}
-
-.keep-scrolling {
-  width: 8vh;
-  height: 8vh;
-  position: absolute;
-  top: 90vh;
-  color: white;
-  left: 50vw;
-  margin-left: -4vh;
-  text-align: center;
-  display: block;
-  opacity: 0.3;
-  cursor: pointer;
-}
-
-
-.ov__one p, .ov__one h1 {
+.matrix h1, .matrix p {
   color: white !important;
   margin: 0;
-}
-
-.ov__two h1, .ov__two > div > div > p {
-  margin-top: 20px;
-  text-align: center;
 }
 
 .social-links {
@@ -114,4 +47,52 @@ img.me {
   width: 150px;
   border-radius: 50%;
   border: 5px solid #fff;
+}
+
+.slider-wrapper {
+  background-image: url(../img/bg/chsxyz-blur.png);
+  -webkit-transition: background-image 0.2s ease-in-out;
+  -moz-transition: background-image 0.2s ease-in-out;
+  -ms-transition: background-image 0.2s ease-in-out;
+  -o-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
+}
+
+.slider-wrapper h1, .slider-wrapper > div > div > p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.slider-wrapper .container {
+  height: 90vh;
+  margin: 1vh auto;
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.center {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  display: block;
+}
+
+.keep-scrolling {
+  width: 8vh;
+  height: 8vh;
+  position: absolute;
+  top: 90vh;
+  color: white;
+  left: 50vw;
+  margin-left: -4vh;
+  text-align: center;
+  display: block;
+  opacity: 0.3;
+  cursor: pointer;
 }
