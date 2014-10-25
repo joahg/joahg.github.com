@@ -65,6 +65,11 @@
 		.slider .left-arrow, .slider .right-arrow {
 			display:none;
 		}
+
+		.social-links li, .social-links img {
+			width: 30px;
+			height: 30px;
+		}
 	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
