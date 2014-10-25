@@ -29,6 +29,10 @@
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
+		.slider-wrapper .container {
+			height:100vh;
+		}
+
 		article#portfolio {
 			height: 465px;
 		}

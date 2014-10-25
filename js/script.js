@@ -6,7 +6,7 @@ $(document).ready(function() {
     left_offset_desktop: 64.5,
     pagination: true,
     callback: function(slide) {
-      $('.largebg').css('background-image', 'url(' + ($(slide).find('img').attr('src').split('.').join('-blur.')).split('slider').join('bg') + ')')
+      $('.slider-wrapper').css('background-image', 'url(' + ($(slide).find('img').attr('src').split('.').join('-blur.')).split('slider').join('bg') + ')')
     }
   });
 
