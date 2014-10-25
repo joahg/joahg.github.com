@@ -96,3 +96,9 @@ img.me {
   opacity: 0.3;
   cursor: pointer;
 }
+
+.preload img, .preload {
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+}
