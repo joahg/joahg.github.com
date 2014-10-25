@@ -29,8 +29,11 @@
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
+		.slider-wrapper {
+			min-height: 520px;
+		}
 		.slider-wrapper .container {
-			height:100vh;
+			min-height: 510px;
 		}
 
 		article#portfolio {
@@ -80,6 +83,11 @@
 		}
 	}
 
+	@media only screen and (max-height: 420px) {
+		.keep-scrolling {
+			display: none;
+		}
+	}
 
 /* #Font-Face
 ================================================== */

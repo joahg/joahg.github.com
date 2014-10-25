@@ -50,6 +50,7 @@ img.me {
 }
 
 .slider-wrapper {
+  min-height: 670px;
   background-image: url(../img/bg/chsxyz-blur.png);
   -webkit-transition: background-image 0.2s ease-in-out;
   -moz-transition: background-image 0.2s ease-in-out;
@@ -65,6 +66,7 @@ img.me {
 
 .slider-wrapper .container {
   height: 90vh;
+  min-height: 663px;
   margin: 1vh auto;
   background-color: rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.8);
@@ -101,4 +103,14 @@ img.me {
   visibility: hidden;
   height: 0;
   position: absolute;
+}
+
+.visible-xs {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .visible-xs {
+    display: block;
+  }
 }
