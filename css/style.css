@@ -2,12 +2,12 @@
   box-sizing: border-box;
 }
 
-body, div, p, h1 {
+body, div, p, h1, h2 {
   padding: 0;
   margin: 0;
 }
 
-a, em, strong {
+a, em {
   display: inline-block;
 }
 
@@ -47,7 +47,7 @@ img {
   height: 300px;
 }
 
-p {
+p, h2 {
   font-family: 'Lato';
 }
 
@@ -56,7 +56,7 @@ em {
   padding-bottom: 5px;
 }
 
-strong {
+h2 {
   font-weight: 700;
   font-size: 2.0em;
   padding-top: 5px;
