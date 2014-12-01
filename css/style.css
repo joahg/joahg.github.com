@@ -19,16 +19,13 @@ a, em, strong {
 .main::before {
   content: '';
   position: absolute;
-  width: 100%;
   width: 100vw;
-  height: 45%;
   height: 45vh;
   background-color: #F8FAFC;
   z-index: 0;
 }
 
 .wrapper {
-  padding-top: 45%;
   padding-top: 45vh;
   position: relative;
   z-index: 1;
