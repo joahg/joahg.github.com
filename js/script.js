@@ -1,25 +1,18 @@
-$(document).ready(function() {
-  $('.slider').superSlider({
-    timer_on: false,
-    mobile_width: 500,
-    desktop_width: 900,
-    left_offset_desktop: 64.5,
-    pagination: true,
-    callback: function(slide) {
-      $('.slider-wrapper').css('background-image', 'url(' + ($(slide).find('img').attr('src').split('.').join('-blur.')).split('slider').join('bg') + ')')
-    }
-  });
-
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $("html, body").animate({
-          scrollTop: target.offset().top
-        }, 800);
-        return false;
-      }
-    }
-  });
-});
+$.ajax({
+  url: 'https://api.twitter.com/1.1/users/show.json',
+  type: 'GET',
+  dataType: 'JSON',
+  data: {
+    screen_name: 'therealjoahg',
+    oauth_consumer_key: 'mOVf8dSwih6Mz0ZojNK34Q',
+    oauth_nonce: '6c47f47b7f25f5ce9859548619533ce9',
+    oauth_signature: 'pFKMhbyZtOJlNFSc2Sg3sd7UsmA%3D',
+    oauth_signature_method: 'HMAC-SHA1',
+    oauth_timestamp: '1417399131',
+    oauth_token: '2309118324-fRmtPzndj7sYaC3chvKnLNwUUopQGHFPHCHTCOu',
+    oauth_version: '1.0'
+  },
+  success: function(d) {
+    console.log(d)
+  }
+})
