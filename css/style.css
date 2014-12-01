@@ -46,6 +46,8 @@ a:hover {
 
 img {
   margin-top: -135px;
+  width: 300px;
+  height: 300px;
 }
 
 p {
@@ -125,5 +127,12 @@ h1 {
     height: 200px;
     width: 200px;
     margin-top: -90px;
+  }
+
+  .left {
+    width: 55%;
+  }
+  .right {
+    width: 45%;
   }
 }
