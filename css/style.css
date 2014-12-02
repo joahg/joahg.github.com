@@ -42,16 +42,16 @@ a:hover {
 
 html.no-js a:hover,
 html.no-cssgradients a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
  
 html.cssgradients a:hover {
-    text-shadow: 0 0 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 2px 0 0 #fff, -2px 0 0 #fff;
-    background-image: linear-gradient( to right, currentColor 0%, currentColor 100% );
-    background-repeat: repeat-x;
-    background-position: 0 95%;
-    -webkit-background-size: 100% 1px;
-    background-size: 100% 1px;
+  text-shadow: 0 0 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 2px 0 0 #fff, -2px 0 0 #fff;
+  background-image: linear-gradient( to right, currentColor 0%, currentColor 100% );
+  background-repeat: repeat-x;
+  background-position: 0 95%;
+  -webkit-background-size: 100% 1px;
+  background-size: 100% 1px;
 }
 
 img {
