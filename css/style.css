@@ -50,7 +50,6 @@ html.cssgradients a:hover {
   background-image: linear-gradient( to right, currentColor 0%, currentColor 100% );
   background-repeat: repeat-x;
   background-position: 0 95%;
-  -webkit-background-size: 100% 1px;
   background-size: 100% 1px;
 }
 
