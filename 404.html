@@ -25,6 +25,17 @@
         text-align: right;
         padding-right: 10px;
       }
+      html.no-js a,
+      html.no-cssgradients a {
+        text-decoration: underline;
+      }
+      html.cssgradients a {
+        text-shadow: 0 0 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 2px 0 0 #fff, -2px 0 0 #fff;
+        background-image: linear-gradient( to right, currentColor 0%, currentColor 100% );
+        background-repeat: repeat-x;
+        background-position: 0 95%;
+        background-size: 100% 1px;
+      }
     </style>
 
     <script src="/js/modernizr.min.js"></script>
