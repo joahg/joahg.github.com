@@ -124,7 +124,8 @@ h1 {
   .left, .right {
     width: 100%;
     clear: both;
-    text-align: center;
+    text-align: center !important;
+    float: left !important;
   }
 
   img {
