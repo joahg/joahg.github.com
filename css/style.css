@@ -36,16 +36,19 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover, a:focus {
   color: #428bca;
+  outline:  0;
 }
 
 html.no-js a:hover,
-html.no-cssgradients a:hover {
+html.no-cssgradients a:hover,
+html.no-js a:focus,
+html.no-cssgradients a:focus {
   text-decoration: underline;
 }
  
-html.cssgradients a:hover {
+html.cssgradients a:hover, html.cssgradients a:focus {
   text-shadow: 0 0 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 2px 0 0 #fff, -2px 0 0 #fff;
   background-image: linear-gradient( to right, currentColor 0%, currentColor 100% );
   background-repeat: repeat-x;
