@@ -16,11 +16,9 @@
     <script src="/js/modernizr.min.js"></script>
     <script>
       window.onload = function() {
-        function addEmoji() {
-          if (navigator.userAgent.indexOf('Mac OS X') != -1) {
-            window.location.hash = "💩";
-          }
-        };
+        if (navigator.userAgent.indexOf('Mac OS X') != -1) {
+          window.location.hash = "💩";
+        }
       };
     </script>
 
