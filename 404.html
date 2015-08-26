@@ -39,6 +39,13 @@
     </style>
 
     <script src="/js/modernizr.min.js"></script>
+    <script>
+      window.onload = function() {
+        if (navigator.userAgent.indexOf('Mac OS X') != -1) {
+          window.location.hash = "😱";
+        }
+      };
+    </script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8"/>
