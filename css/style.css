@@ -7,7 +7,7 @@ body, div, p, h1, h2 {
   margin: 0;
 }
 
-a, em {
+a {
   display: inline-block;
 }
 
@@ -69,6 +69,11 @@ p, h2 {
 em {
   font-weight: 300;
   padding-bottom: 5px;
+  display: block;
+}
+
+em:first-child {
+  padding-bottom: 0;
 }
 
 h2 {
