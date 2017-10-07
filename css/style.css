@@ -72,7 +72,7 @@ em {
   display: block;
 }
 
-em:first-child {
+em:not(:last-of-type) {
   padding-bottom: 0;
 }
 
@@ -106,7 +106,20 @@ h1 {
   padding-left: 10px;
 }
 
+.visible-sm {
+  display: none;
+}
+
 @media screen and (max-width: 650px) {
+  .visible-sm {
+    display: block;
+    display: initial;
+  }
+
+  .hidden-sm {
+    display: none;
+  }
+
   .main::before {
     display: none;
   }
