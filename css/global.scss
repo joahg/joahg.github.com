@@ -20,8 +20,7 @@ body {
 
 header {
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 15px;
 
   img {
     width: 130px;
@@ -147,4 +146,15 @@ p a {
   color: inherit;
   display: inline-block;
   line-height: 1.2;
+}
+
+@media (max-width: 499px) {
+  header div {
+    margin-right: 15px;
+  }
+
+  main .text p {
+    text-align: left;
+    margin: 0 15px;
+  }
 }
