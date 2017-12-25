@@ -1,101 +1,30 @@
-<!doctype html>
-<!--
+---
+layout: default
+permalink: /
+---
 
-  I see you there, fellow source code monkey ;)
-  No need to weed through here, though, I've 
-  made all the source code publicly available on 
-  GitHub at https://github.com/joahg/joahg.github.com
-  
--->
-<html>
-  <head>
-    <link rel="stylesheet" href="/css/style.css?fucache=1">
-    <link rel="icon" href="/img/favicon.png" />
-
-    <script src="/js/modernizr.min.js"></script>
-    <script>
-      window.onload = function() {
-        if (navigator.userAgent.indexOf('Mac OS X') != -1) {
-          window.location.hash = "💩";
-        }
-      };
-    </script>
-    
-    <script>
-      WebFontConfig = {
-        google: { families: [ 'Lato:300italic,700,400:latin', 'Oswald::latin' ] }
-      };
-      (function() {
-        var wf = document.createElement('script');
-        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-        wf.type = 'text/javascript';
-        wf.async = 'true';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(wf, s);
-      })(); 
-    </script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="gxJJJfHWfj1uFR16mAHfmav0bNjSWv5W_lTc1Y8fo4w" >
-    <meta charset="utf-8"/>
-  
-    <title>Joah Gerstenberg</title>
-  </head>
-  <body>
-    <div class="main">
-      <div class="wrapper">
-        <div class="center">
-          <div class="left">
-            <h1>Hi. I'm Joah.</h1>
-            <h2>Joah Gerstenberg</h2>
-            <p>
-              <em><a href="http://bfy.tw/8Btd">senior frontend developer</a> at <a href="https://www.coinigy.com/">coinigy</a></em>
-              <em>cofounder of <a href="http://theneverwoods.com">the neverwoods</a> and <a href="http://irl.work">irl coworking</a></em>
-              <em><a href="http://www.joahandhaley.com">husband</a> to <a href="http://gracenut.github.io/">Haley</a>, organizer at <a href="http://bmtjs.org">beaumont.js</a></em>
-              <a href="https://twitter.com/therealjoahg" rel="me">twitter</a> &middot; <a href="https://github.com/joahg" rel="me">github</a> &middot; <a href="https://www.facebook.com/joahg96">facebook</a><br class="visible-sm" /><span class="hidden-sm"> &middot; </span><a href="http://www.linkedin.com/pub/joah-gerstenberg/86/b73/2a4">linkedin</a> &middot; <a href="http://joah.codes">blog</a> &middot; <a href="https://keybase.io/joahg">keybase</a> &middot; <a href="mailto:me@joahg.com">email</a>
-            </p>
-          </div>
-          <div class="right">
-            <img src="//www.gravatar.com/avatar/b0a66c02f4ccd6b7c0b5498f70e652b9.png?s=600" width="300" height="300" alt="Joah Gerstenberg on Gravatar">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-45765973-1');
-      ga('send', 'pageview');
-    </script>
-
-    <script>
-      (function(f,b,g){
-          var xo=g.prototype.open,xs=g.prototype.send,c;
-          f.hj=f.hj||function(){(f.hj.q=f.hj.q||[]).push(arguments)};
-          f._hjSettings={hjid:6268, hjsv:2};
-          function ls(){f.hj.documentHtml=b.documentElement.outerHTML;c=b.createElement("script");c.async=1;c.src="//static.hotjar.com/c/hotjar-6268.js?sv=2";b.getElementsByTagName("head")[0].appendChild(c);}
-          if(b.readyState==="interactive"||b.readyState==="complete"||b.readyState==="loaded"){ls();}else{if(b.addEventListener){b.addEventListener("DOMContentLoaded",ls,false);}}
-          if(!f._hjPlayback && b.addEventListener){
-              g.prototype.open=function(l,j,m,h,k){this._u=j;xo.call(this,l,j,m,h,k)};
-              g.prototype.send=function(e){var j=this;function h(){if(j.readyState===4){f.hj("_xhr",j._u,j.status,j.response)}}this.addEventListener("readystatechange",h,false);xs.call(this,e)};
-          }
-      })(window,document,window.XMLHttpRequest);
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Person",
-      "email": "mailto:me@joahg.com",
-      "image": "http://www.gravatar.com/avatar/b0a66c02f4ccd6b7c0b5498f70e652b9.png?s=600",
-      "jobTitle": "Software Engineer",
-      "name": "Joah Gerstenberg",
-      "url": "http://www.joahg.com"
-    } 
-    </script>
-  </body>
-</html>
+<section class="text">
+  <p>
+    i build webapps, brands, and communities.<br>i'm husband to <a href="http://gracenut.github.io/" target="_blank">haley</a>, and organizer of <a href="http://bmtjs.org" target="_blank">beaumont.js</a> and <a href="https://www.meetup.com/bmtcrypto/" target="_blank">$bmt</a>.<br>below are a few of the things i'm currently working on. take a look at <a href="http://theneverwoods.com/work/" target="_blank">my portfolio</a> for more.
+  </p>
+</section>
+<section class="tile cgy">
+  <a href="https://www.coinigy.com/" target="_blank" title="Coinigy">
+    {% include logos/coinigy.html %}
+  </a>
+</section>
+<section class="tile nw">
+  <a href="http://theneverwoods.com/" target="_blank" title="The Neverwoods">
+    {% include logos/theneverwoods.html %}
+  </a>
+</section>
+<section class="tile fa">
+  <a href="http://getfieldassist.com/" target="_blank" title="Field Assist">
+    {% include logos/field-assist.html %}
+  </a>
+</section>
+<section class="tile irl">
+  <a href="http://irl.work/" target="_blank" title="IRL Coworking">
+    {% include logos/irl.html %}
+  </a>
+</section>

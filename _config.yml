@@ -1,0 +1,14 @@
+title: simple jekyll landing page
+email: team@theneverwoods.com
+description: ""
+baseurl: ""
+url: ""
+sass:
+    style: compressed
+gems:
+  - jekyll-redirect-from
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - CNAME
+  - .gitignore
