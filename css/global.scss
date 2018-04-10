@@ -60,7 +60,7 @@ footer {
   }
 }
 
-main {
+main.home {
   width: 800px;
   max-width: 100%;
   margin: auto;
@@ -133,6 +133,36 @@ main {
       grid-area: fa;
       background: #1C2848;
     }
+  }
+}
+
+main.services {
+  width: 800px;
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+
+  ul {
+    max-width: 400px;
+    display: inline-block;
+    text-align: left;
+  }
+
+  p {
+    max-width: 400px;
+    margin: auto;
+  }
+
+  a {
+    text-shadow: 0 0 0 #FAF7F4, 1px 0 0 #FAF7F4, -1px 0 0 #FAF7F4, 2px 0 0 #FAF7F4, -2px 0 0 #FAF7F4;
+    background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
+    background-repeat: repeat-x;
+    background-position: 0 95%;
+    background-size: 100% 1px;
+    text-decoration: none !important;
+    color: inherit;
+    display: inline-block;
+    line-height: 1.2;
   }
 }
 
