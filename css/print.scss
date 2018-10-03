@@ -1,0 +1,34 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+html, body {
+  font-size: 12px;
+}
+
+header img {
+  width: 80px
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+h2.social-header {
+  display: none;
+}
+
+section.social {
+  display: none;
+}
+
+section.work {
+  .logo-wrapper {
+    display: none;
+  }
+
+  .description {
+    padding-left: 0;
+    padding-top: 0;
+  }
+}
