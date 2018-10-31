@@ -8,7 +8,7 @@
 }
 
 html { 
-  background: #FAF7F4;
+  background: #f8e9da;
 }
 
 body {
@@ -60,10 +60,10 @@ section {
     .logo-wrapper {
       flex: 0 0 250px;
       position: relative;
-      color: black;
+      color: #0F1209;
 
       &.coinigy { color: #32c2f2; }
-      &.neverwoods { color: black; }
+      &.neverwoods { color: #0F1209; }
       &.irl { color: white; }
       &.field-assist { color: #1C2848; }
       &.fsg { color: #062970; }
@@ -129,8 +129,8 @@ section {
         display: block;
 
         a {
-          color: black;
-          text-shadow: 0 0 0 #FAF7F4, 1px 0 0 #FAF7F4, -1px 0 0 #FAF7F4, 2px 0 0 #FAF7F4, -2px 0 0 #FAF7F4;
+          color: #0F1209;
+          text-shadow: 0 0 0 #f8e9da, 1px 0 0 #f8e9da, -1px 0 0 #f8e9da, 2px 0 0 #f8e9da, -2px 0 0 #f8e9da;
           background-image: linear-gradient( to right, currentColor 0%, currentColor 100% );
           background-repeat: repeat-x;
           background-position: 0 95%;
@@ -170,7 +170,7 @@ section {
 
 
 p a {
-  text-shadow: 0 0 0 #FAF7F4, 1px 0 0 #FAF7F4, -1px 0 0 #FAF7F4, 2px 0 0 #FAF7F4, -2px 0 0 #FAF7F4;
+  text-shadow: 0 0 0 #f8e9da, 1px 0 0 #f8e9da, -1px 0 0 #f8e9da, 2px 0 0 #f8e9da, -2px 0 0 #f8e9da;
   background-image: linear-gradient( to right, currentColor 0%, currentColor 100% );
   background-repeat: repeat-x;
   background-position: 0 95%;
