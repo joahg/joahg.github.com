@@ -5,7 +5,7 @@ description: ""
 keywords: ""
 url: "https://www.joahg.com"
 basepath: ""
-cachebust: ""
+cachebust: "1"
 thumbnail: "/img/thumbnail.jpg"
 # sass:
 #   style: compressed

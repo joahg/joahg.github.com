@@ -23,6 +23,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+  max-width: 180rem;
+  margin: auto;
 
   h1 {
     font-size: 10.125rem;
@@ -50,3 +53,25 @@ footer {
 }
 
 // @media (max-width: )
+
+
+@media (max-width: 675px) {
+  .container {
+    h1 {
+      font-size: 8rem;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 515px) {
+  .container {
+    h1 {
+      font-size: 6rem;
+    }
+  }
+}
+

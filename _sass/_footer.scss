@@ -19,3 +19,31 @@ footer {
     font-size: 0.7em;
   }
 }
+
+@media (max-width: 500px) {
+  footer {
+    ul {
+      li {
+        &.dot {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  footer {
+    font-size: 1.75rem;
+
+    ul {
+      li {
+        margin: 0 0.2rem;
+        
+        &.dot {
+          display: none;
+        }
+      }
+    }
+  }
+}
