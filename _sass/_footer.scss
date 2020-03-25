@@ -1,0 +1,50 @@
+footer {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+
+    li {
+      display: inline-block;
+
+      &.dot {
+        margin: 0 1rem;
+      }
+    }
+  }
+
+  p {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 500px) {
+  footer {
+    ul {
+      li {
+        &.dot {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  footer {
+    font-size: 1.75rem;
+
+    ul {
+      li {
+        margin: 0 0.2rem;
+        
+        &.dot {
+          display: none;
+        }
+      }
+    }
+  }
+}

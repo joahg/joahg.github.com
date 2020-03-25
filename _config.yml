@@ -1,14 +1,19 @@
-title: simple jekyll landing page
-email: team@theneverwoods.com
-description: ""
-baseurl: ""
-url: ""
+environment: production
+title: Joah Gerstenberg
+email: me@joahg.com
+description: "Hello. I'm Joah, a developer from Texas. I build websites, mobile apps, and inclusive communities for internet creators"
+keywords: "joah, joahg, joah gerstenberg, react developer, texas developer"
+url: "https://www.joahg.com"
+basepath: ""
+cachebust: "1"
+thumbnail: "/img/thumbnail.jpg"
 sass:
-    style: compressed
-gems:
+  style: compressed
+plugins:
   - jekyll-redirect-from
 exclude:
   - Gemfile
   - Gemfile.lock
   - CNAME
   - .gitignore
+  - .gitkeep

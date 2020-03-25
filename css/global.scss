@@ -2,224 +2,107 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
+@import "fonts";
+@import "colors";
+
+@import "header";
+@import "footer";
+
 * {
   box-sizing: border-box;
-  font-family: 'Mukta Malar', sans-serif;
 }
 
-html { 
-  background: #f8e9da;
+html {
+  font-size: 8px;
 }
 
 body {
   margin: 0;
-  padding: 0;
-}
-
-header {
-  img {
-    display: inline-block;
-    vertical-align: middle;
-    width: 120px;
-  }
-
-  h1 {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0;
-    margin-left: 30px;
-  }
-}
-
-footer {
-  p {
-    text-align: center;
-
-    a {
-      background: none;
-      text-shadow: none;
-    }
-  }
-}
-
-h2 {
-  margin: 30px 0;
-  line-height: 1;
+  font-family: 'Roboto Mono';
+  font-size: 1.75rem;
+  line-height: 1.6;
+  background: $black;
+  color: $white;
+  min-height: 100vh;
 }
 
 main {
-  max-width: 710px;
-  padding: 30px;
+  max-width: 204rem;
+  padding: 2rem;
   margin: auto;
-}
 
-section {
-  margin-bottom: 30px;
-
-  &.work {
-    display: flex;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: flex-start;
-
-    .logo-wrapper {
-      flex: 0 0 250px;
-      position: relative;
-      color: #0F1209;
-
-      &.coinigy { color: #32c2f2; }
-      &.neverwoods { color: #0F1209; }
-      &.irl { color: white; }
-      &.field-assist { color: #1C2848; }
-      &.fsg { color: #3039b2; }
-      &.beaumont-js { color: #23455B; }
-      &.codecademy { color: #1F4056; }
-      &.capital-one { color: #004977; }
-      &.americommerce { color: #FF703E; }
-      &.ttr { color: #101113; }
-      &.rookieup { color: #30a5a4; }
-
-      &:before {
-        content: '';
-        position: absolute;
-        width: 3px;
-        height: calc(100% - 4px - 25px);
-        margin: auto;
-        background: currentColor;
-        left: 0;
-        right: 0;
-        top: 0;
-      }
-
-      &:after {
-        content: '';
-        position: absolute;
-        width: 8px;
-        height: 8px;
-        border-radius: 4px;
-        margin: auto;
-        background: currentColor;
-        left: 0;
-        right: 0;
-        bottom: 25px;
-      }
-
-      .logo {
-        color: inherit;
-        position: relative;
-        z-index: 1;
-        padding: 20px;
-        text-align: center;
-        width: 250px;
-        height: 110px;
-        display: flex;
-        background: currentColor;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-
-        img {
-          display: inline-block;
-          max-width: 100%;
-          max-height: 100%;
-        }
-      }
-    }
-
-    .description {
-      flex: 1 0 0;
-      padding: 20px;
-      padding-bottom: 0;
-
-      .company {
-        display: block;
-
-        a {
-          color: #0F1209;
-          text-shadow: 0 0 0 #f8e9da, 1px 0 0 #f8e9da, -1px 0 0 #f8e9da, 2px 0 0 #f8e9da, -2px 0 0 #f8e9da;
-          background-image: linear-gradient( to right, currentColor 0%, currentColor 100% );
-          background-repeat: repeat-x;
-          background-position: 0 95%;
-          background-size: 100% 1px;
-          text-decoration: none !important;
-          color: inherit;
-          display: inline-block;
-          line-height: 1.1;
-        }
-      }
-
-      .position {
-        display: block;
-      }
-
-      .tenure {
-        display: block;
-      }
-
-      p {
-        margin-bottom: 0;
-
-        &.skills {
-          span {
-            background: #757371;
-            color: white;
-            margin-right: 3px;
-            display: inline-block;
-            line-height: 1;
-            padding: 4px 4px 3px;
-          }
-        }
-      }
-    }
+  .container {
+    padding: 4rem 0;
+    width: 100%;
+    max-width: 180rem;
+    margin: auto;
+    margin-top: 10rem;
   }
 }
 
+header, footer {
+  font-size: 2rem;
+}
 
-p a {
-  text-shadow: 0 0 0 #f8e9da, 1px 0 0 #f8e9da, -1px 0 0 #f8e9da, 2px 0 0 #f8e9da, -2px 0 0 #f8e9da;
-  background-image: linear-gradient( to right, currentColor 0%, currentColor 100% );
-  background-repeat: repeat-x;
-  background-position: 0 95%;
-  background-size: 100% 1px;
-  text-decoration: none !important;
+h1, h2 {
+  font-family: 'LonePine';
+  margin: 0;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 8rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+a {
   color: inherit;
-  display: inline-block;
-  line-height: 1.1;
-}
+  text-decoration: none;
 
-@media (max-width: 574px) {
-  section.work {
-    padding-top: 110px;
-    
-    .logo-wrapper {
-      flex: 0 0 50px;
+  &:focus {
+    outline-color: $pink;
+  }
 
-      .logo {
-        position: absolute;
-        top: -110px;
-        width: calc(100vw - 60px);
-      }
-    }
-
-    .description {
-      padding-left: 0;
-      padding-top: 15px;
-    }
+  &:hover {
+    text-decoration: underline;
   }
 }
 
-@media (max-width: 463px) {
-  header {
-    text-align: center;
+p {
+  margin: 1rem 0;
+  line-height: 2.2;
+}
 
-    img {
-      border-radius: 50%;
-    }
+.not-found {
+  text-align: center;
 
-    h1 {
-      margin: auto;
-      margin-top: 15px;
-      display: block;
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 800px) {
+  main {
+    .container {
+      margin-top: 0;
     }
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  header, footer {
+    font-size: 1.75rem;
   }
 }
