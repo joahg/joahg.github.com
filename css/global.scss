@@ -20,6 +20,7 @@ body {
   margin: 0;
   font-family: 'Roboto Mono';
   font-size: 1.75rem;
+  line-height: 1.6;
   background: $black;
   color: $white;
   min-height: 100vh;
@@ -32,6 +33,10 @@ main {
 
   .container {
     padding: 4rem 0;
+    width: 100%;
+    max-width: 180rem;
+    margin: auto;
+    margin-top: 10rem;
   }
 }
 
@@ -43,6 +48,7 @@ h1, h2 {
   font-family: 'LonePine';
   margin: 0;
   margin-bottom: 2rem;
+  line-height: 1.2;
 }
 
 h1 {
@@ -64,4 +70,5 @@ a {
 
 p {
   margin: 1rem 0;
+  line-height: 2.2;
 }

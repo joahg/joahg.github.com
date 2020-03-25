@@ -1,0 +1,144 @@
+  - title: Frontend Development Consultant
+    url: https://bit.ly/2FXTchl
+    company: FSG Smart Buildings
+    tenure: May 2018 - Present
+    description: FSG Smart Buildings hired me as a consultant to lead the frontend development of their Enterprise IoT management and data analyzation platform.
+    skills: 
+      - IoT
+      - Data Processing
+      - HTML
+      - CSS
+      - Sass
+      - JavaScript
+      - React
+      - Angular
+      - Ionic
+      - Python
+      - Express.js
+      - Nginx
+  - title: Co-founder / Development Director
+    url: https://go.joahg.com/2rtS2q0
+    company: The Neverwoods
+    tenure: Oct 2016 - Present
+    description: After leaving Capital One, I teamed up with <a target="_blank" href="http://aarondavis.design/">Aaron Davis</a> to start a design & development agency as an umbrella for our collective freelance/consulting work. I have gotten business administration / development experience, as well as have had the opportunity to work directly with a variety of small businesses.
+    skills:
+      - Fintech
+      - HTML
+      - CSS
+      - Sass
+      - JavaScript
+      - React
+      - Express.js
+      - MongoDB
+      - Business Development / Administration
+  - title: Senior Frontend Developer
+    url: https://go.joahg.com/2EZldTG
+    company: Coinigy
+    tenure: Oct 2016 - April 2019
+    description: Coinigy hired me as their lead frontend developer dedicated to improving the user experience of the cryptocurrency portfolio management platform. 
+    skills:
+      - Fintech
+      - Data Processing
+      - Leadership
+      - HTML
+      - CSS
+      - Sass
+      - JavaScript
+      - React
+      - Express.js
+      - Nginx
+      - PHP
+  - title: Mentor
+    url: https://www.rookieup.com/joahgerstenberg
+    company: RookieUp
+    tenure: July 2018 - Present
+    description: I joined RookieUp as a mentor, helping out with their frontend development bootcamp program. 
+    skills:
+      - Education
+      - HTML
+      - CSS
+      - Sass
+      - JavaScript
+      - React
+      - Express.js
+  - title: Co-founder
+    url: https://go.joahg.com/2EWZxYj
+    company: IRL Coworking
+    tenure: Oct 2017 - Oct 2018
+    description: I co-founded the first coworking space in Beaumont, Texas. I got some unique experiences running a local business, and I really enjoyed building a community.
+    skills:
+      - Local Business
+      - Community Management
+      - Business Development / Administration
+  - title: Meetup Organizer
+    url: https://go.joahg.com/2EX2oAz
+    company: beaumont.js
+    tenure: Dec 2015 - June 2018
+    description: I led a local developer meetup over the course of 2.5 years. I wrote a blog post on <a target="_blank" href="http://joah.codes/post/178706502844/i-ran-a-meetup-for-25-years">my experience</a>.
+    skills:
+      - Education
+      - JavaScript
+      - React
+      - Python
+      - Bash
+      - Community Management
+  - title: Co-founder / Developer
+    url: https://go.joahg.com/2rtStAE
+    company: Field Assist
+    tenure: July 2017 - Feb 2018
+    description: Over the summer of 2017, I worked as the developer on a team creating a scheduling platform for league-based teams. I built out the backend -- database structure, data management/user authentication system, REST API, scheduling algorithm, as well as the frontend -- UI/UX, React app to consume the backend API, custom-created input methods for the specific use case, as well as a lot more. I was the only dev working on the project. 
+    skills:
+      - Data Processing
+      - HTML
+      - CSS
+      - Sass
+      - JavaScript
+      - React
+      - Express.js
+      - MongoDB
+  - title: Frontend Development Consultant
+    url: https://capital.one/2IAf7fz
+    company: Capital One
+    tenure: Oct 2016 - May 2017
+    description: After I left Capital One, I continued working with them as a consultant on frontend development, best practices, and client implementation.
+    skills:
+      - Fintech
+      - HTML
+      - CSS
+      - JavaScript
+      - React
+  - title: Software Engineer
+    url: https://capital.one/2IAf7fz
+    company: Capital One
+    tenure: Nov 2014 - Oct 2016
+    description: I worked in Capital One's Small Business department, joining the team as a part of the acquisition of AmeriCommerce. I continued my duties from AmeriCommerce, as well as assisted in building out the Spark Business banking web interface. I decided to leave after <a target="_blank" href="https://joah.codes/post/152836369039/new-job">reconsidering my priorities</a>.
+    skills:
+      - Fintech
+      - HTML
+      - CSS
+      - JavaScript
+      - React
+      - C#
+      - Perl
+  - title: Frontend Developer
+    url: http://bit.ly/2QqGrzk
+    company: AmeriCommerce
+    tenure: Aug 2014 - Nov 2014
+    description: While working at AmeriCommerce, I worked primarily on client site implementation, building out designs for clients of the Ecommerce platform, along with building out internal marketing pages.
+    skills:
+      - Fintech
+      - HTML
+      - CSS
+      - JavaScript
+  - title: Forums Moderator
+    url: http://bit.ly/2xWoguK
+    company: Codecademy
+    tenure: May 2013 - Nov 2016
+    description: I joined the first team of forum moderators on Codecademy's platform. I helped students learn the basics of web development, as well as created  courses on the platform.
+    skills:
+      - Education
+      - HTML
+      - CSS
+      - JavaScript
+      - Python
+      - Ruby

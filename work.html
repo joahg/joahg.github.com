@@ -2,7 +2,24 @@
 layout: default
 title: Work History
 permalink: /work
+stylesheet: work
 ---
 
 <h1><img src="/img/code.svg" width="110" height="76"> Work History</h1>
 
+{% for job in site.data.jobs %}
+<div class="job">
+  <h2>{{ job.title }}</h2>
+  <div class="job--info">
+    <div class="job--company">
+      <p>
+        <a href="{{ job.url }}" target="_blank">{{ job.company }}</a><br />
+        <span>{{ job.tenure }}</span>
+      </p>
+    </div>
+    <div class="job--description">
+      <p>{{ job.description }}</p>
+    </div>
+  </div>
+</div>
+{% endfor %}
