@@ -23,11 +23,23 @@ h1 {
 
     .job--company {
       flex: 0 0 30rem;
+      max-width: 100%;
     }
 
     .job--description {
       opacity: 70%;
       flex: 1 0 40rem;
+      max-width: 100%;
     }
+  }
+}
+
+@media (max-width: 800px) {
+  h1 {
+    margin-bottom: 10rem;
+  }
+
+  .job {
+    margin-bottom: 10rem;
   }
 }

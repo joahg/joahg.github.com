@@ -12,7 +12,8 @@ header {
 
     ul {
       flex: 1 0 0;
-      max-width: 50rem;
+      // max-width: 50rem;
+      max-width: 40rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -27,6 +28,16 @@ header {
         a {
 
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    nav {
+      ul {
+        max-width: 25rem;
       }
     }
   }

@@ -1,0 +1,33 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+@import "colors";
+
+.about-row {
+  max-width: 100rem;
+  margin: 10rem auto 20rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  & > div {
+    flex: 1 0 50rem;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+    }
+
+    p {
+      text-align: left;
+      margin: 2rem;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .about-row {
+    margin: 6rem auto 10rem;
+  } 
+}

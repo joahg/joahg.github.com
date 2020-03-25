@@ -49,6 +49,18 @@ footer {
   }
 }
 
+@media (min-width: 1200px) {
+  body {
+    background-image: url(/img/hero@1x.jpg);
+  }
+}
+
+@media (min-width: 1600px) {
+  body {
+    background-image: url(/img/hero@2x.jpg);
+  }
+}
+
 @media (max-width: 675px) {
   .container {
     h1 {
@@ -69,3 +81,15 @@ footer {
   }
 }
 
+
+@media (max-width: 400px) {
+  .container {
+    h1 {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 1.75rem;
+    }
+  }
+}
