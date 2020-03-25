@@ -1,0 +1,21 @@
+footer {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+
+    li {
+      display: inline-block;
+
+      &.dot {
+        margin: 0 1rem;
+      }
+    }
+  }
+
+  p {
+    text-align: center;
+    font-size: 0.7em;
+  }
+}

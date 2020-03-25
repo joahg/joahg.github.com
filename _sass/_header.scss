@@ -1,0 +1,32 @@
+header {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & > a {
+      img {
+
+      }
+    }
+
+    ul {
+      flex: 1 0 0;
+      max-width: 50rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+
+      li {
+        
+        a {
+
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+@import "colors";
+
+body {
+  background-color: $heroblue;
+  background-image: url(/img/hero@0.5x.jpg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    font-size: 10.125rem;
+
+    em {
+      font-style: normal;
+      color: $pink;
+    }
+  }
+
+  p {
+    font-size: 3.125rem;
+  }
+}
+
+footer {
+  // position: fixed;
+  // bottom: 2rem;
+  // left: 2rem;
+  // right: 2rem;
+
+  p {
+    display: none;
+  }
+}
+
+// @media (max-width: )

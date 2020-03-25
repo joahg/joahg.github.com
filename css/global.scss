@@ -2,7 +2,66 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-$blue: #1C34FF;
-$pink: #FEB4C8;
-$white: #FFFFFF;
-$black: #0A0A0C;
+@import "fonts";
+@import "colors";
+
+@import "header";
+@import "footer";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 8px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto Mono';
+  font-size: 1.75rem;
+  background: $black;
+  color: $white;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 204rem;
+  padding: 2rem;
+  margin: auto;
+
+  // .container {
+  //   max-width: 
+  // }
+}
+
+header, footer {
+  font-size: 2rem;
+}
+
+h1, h2 {
+  font-family: 'LonePine';
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 8rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+p {
+  margin: 1rem 0;
+}
