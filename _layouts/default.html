@@ -16,11 +16,11 @@
     <link media="screen" rel="stylesheet" href="{{ site.basepath }}/css/{{ page.stylesheet }}.css?{{ site.cachebust }}" />
     {% endif %}
 
-    <meta property="og:title" content='{% if page.title && page.title != "" %}{{ page.title }} | {% endif %}{{ site.title }}' />
+    <meta property="og:title" content="{% if page.title && page.title != '' %}{{ page.title }} | {% endif %}{{ site.title }}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ site.url }}" />
-    <meta property="og:image" content='{{ site.basepath }}{% if page.thumbnail && page.thumbnail != "" %}{{ page.thumbnail }}{% else %}{{ site.thumbnail }}{% endif %}' />
-    <meta property="og:description" content='{% if page.description && page.description != "" %}{{ page.description }}{% else %}{{ site.description }}{% endif %}' />
+    <meta property="og:image" content="{{ site.basepath }}{% if page.thumbnail && page.thumbnail != '' %}{{ page.thumbnail }}{% else %}{{ site.thumbnail }}{% endif %}" />
+    <meta property="og:description" content="{% if page.description && page.description != '' %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
     <meta name="google-site-verification" content="gxJJJfHWfj1uFR16mAHfmav0bNjSWv5W_lTc1Y8fo4w">
   </head>
   <body>
