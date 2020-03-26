@@ -33,11 +33,22 @@ header {
   }
 }
 
+@media (max-width: 470px) {
+  header {
+    nav {
+      ul {
+        max-width: 34rem;
+      }
+    }
+  }
+}
+
 @media (max-width: 400px) {
   header {
     nav {
       ul {
         max-width: 25rem;
+        font-size: 0.85em;
       }
     }
   }
