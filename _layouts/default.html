@@ -9,11 +9,11 @@
     <meta name="keywords" content="{% if page.keywords && page.keywords != '' %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     
-    <link rel="icon" type="image/png" href="{{ site.basepath }}/img/favicon.png?{{ site.cachebust }}">
-    
+    <!-- <link rel="icon" type="image/png" href="{{ site.basepath }}/img/favicon.png?{{ site.cachebust }}"> -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@500&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
     <link media="screen" rel="stylesheet" href="{{ site.basepath }}/css/global.css?{{ site.cachebust }}" />
     {% if page.stylesheet && page.stylesheet != "" %}
@@ -23,7 +23,7 @@
     <meta property="og:title" content="{% if page.title && page.title != '' %}{{ page.title }} | {% endif %}{{ site.title }}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ site.url }}" />
-    <meta property="og:image" content="{{ site.basepath }}{% if page.thumbnail && page.thumbnail != '' %}{{ page.thumbnail }}{% else %}{{ site.thumbnail }}{% endif %}" />
+    <!-- <meta property="og:image" content="{{ site.basepath }}{% if page.thumbnail && page.thumbnail != '' %}{{ page.thumbnail }}{% else %}{{ site.thumbnail }}{% endif %}" /> -->
     <meta property="og:description" content="{% if page.description && page.description != '' %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
     <meta name="google-site-verification" content="gxJJJfHWfj1uFR16mAHfmav0bNjSWv5W_lTc1Y8fo4w">
   </head>
