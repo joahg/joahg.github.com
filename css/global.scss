@@ -13,96 +13,88 @@
 }
 
 html {
-  font-size: 8px;
+  font-size: 14px;
 }
 
 body {
   margin: 0;
-  font-family: 'Andada Pro', serif;
-  font-size: 1.75rem;
-  line-height: 1.6;
-  background: $black;
-  color: $white;
+  font-family: 'Inter', sans-serif;;
+  font-size: 3rem;
+  background-image: url('/img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: black;
   min-height: 100vh;
 }
 
-main {
-  max-width: 204rem;
-  padding: 2rem;
-  margin: auto;
-
-  .container {
-    padding: 4rem 0;
-    width: 100%;
-    max-width: 180rem;
-    margin: auto;
-    margin-top: 10rem;
-  }
-}
-
-header, footer {
-  font-size: 2rem;
-}
-
-h1, h2 {
-  font-family: 'Playfair Display', serif;
-  margin: 0;
-  margin-bottom: 0.5rem;
-  line-height: 1;
-}
-
 h1 {
-  font-size: 8rem;
-}
-
-h2 {
-  font-size: 3.5rem;
+  font-family: Inter;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  margin-bottom: 2.75rem;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
-
-  &:focus {
-    outline-color: $pink;
-  }
-
-  &:hover {
-    text-decoration: underline;
-  }
+  color: black;
 }
 
 p {
-  margin: 0.5rem 0;
-  line-height: 1.7;
-}
+  margin-top: 0;
+  margin-bottom: 0;
 
-.not-found {
-  text-align: center;
-
-  h1 {
-    font-size: 4rem;
+  &:not(:last-child) {
+    margin-bottom: 2.75rem;
   }
 }
 
-@media (max-width: 800px) {
+main {
+  margin: auto;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  position: relative;
+  min-height: 100vh;
+
+  .container {
+    position: relative;
+    border-radius: 1rem;
+    background: #EFEFEF;
+    padding: 6.25rem;
+    width: 100%;
+    max-width: 66rem;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1600px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 940px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    // font-size: 6px;
+  }
+
   main {
+    padding-bottom: 0;
+
     .container {
-      margin-top: 0;
+      padding: 6rem 2rem;
+      border-radius: 0;
+      max-width: 100%;
+      min-height: calc(100vh - 10rem);
     }
-  }
-
-  h1 {
-    font-size: 6rem;
-  }
-
-  h2 {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 400px) {
-  header, footer {
-    font-size: 1.75rem;
   }
 }
